@@ -1,0 +1,18 @@
+[package]
+name = "c_watch"
+version = "0.1.0"
+edition = "2021"
+description = "It's cargo watch for a c code still in progres" # Add a brief description
+license = "MIT"
+keywords = [
+  "C",
+  "auto complie",
+  "watcher",
+] # Keywords to help others find your crate
+[dependencies]
+clap = { version = "4.5.9", features = ["derive"] }
+notify = "6.1.1"
+colored = "2.0"
+[[bin]]
+name = "watcher_c"
+path = "src/main.rs"
